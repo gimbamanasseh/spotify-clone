@@ -1,5 +1,15 @@
 import Stripe from "stripe";
 
+// create the song type
+export interface Song {
+  id: string;
+  user_id: string;
+  author: string;
+  title: string;
+  song_path: string;
+  image_path: string;
+}
+
 // stripe interfaces as needed - required and optional fields
 
 export interface UserDetails {
